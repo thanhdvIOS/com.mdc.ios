@@ -6,6 +6,10 @@
 //  Copyright © 2017 OminextMobile. All rights reserved.
 //
 
+
+
+// Do Van Thanh
+
 import UIKit
 
 class InstagramCell: UITableViewCell {
