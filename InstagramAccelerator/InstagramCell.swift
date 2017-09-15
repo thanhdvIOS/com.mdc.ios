@@ -21,6 +21,12 @@ class InstagramCell: UITableViewCell {
   
     override func awakeFromNib() {
       super.awakeFromNib()
+      setupUI()
+      
+    }
+  
+  
+    func setupUI(){
       iconImageView.layer.cornerRadius = 20
       iconImageView.layer.masksToBounds = true
       iconImageView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress)))
@@ -30,12 +36,9 @@ class InstagramCell: UITableViewCell {
       cursorImageView.addGestureRecognizer(doubleGestureTap)
       let contentView = ContentView(frame: viewContent.frame)
       viewContent.addSubview(contentView)
-      
     }
 
     //MARK: - Handle Action
-  
-  
   
     func handleSwitchProfile(){
        switchImageView()

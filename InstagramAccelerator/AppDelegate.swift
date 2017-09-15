@@ -32,9 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     vc.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "add"), tag: 2)
     vcLike.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "like"), tag: 3)
     vcProfile.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "cursor1"), tag: 4)
-    
     let navVC = UINavigationController(rootViewController: vc)
-    
     tabBar.viewControllers = [vcHome,vcSearch,navVC,vcLike,vcProfile]
     tabBar.tabBar.tintColor = .black
     

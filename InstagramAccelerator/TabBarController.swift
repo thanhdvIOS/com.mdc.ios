@@ -23,10 +23,7 @@ class TabBarController: UITabBarController,UITabBarControllerDelegate {
           vc.tableView.scrollToRow(at: indexPath, at: .none, animated: true)
         }
       }
-    
-    
-    
-  }
+    }
   
   
 }

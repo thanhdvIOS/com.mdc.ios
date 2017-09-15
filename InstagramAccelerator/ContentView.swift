@@ -25,6 +25,14 @@ class ContentView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    
+    setupCollectionView()
+    
+  }
+  
+  
+  func setupCollectionView(){
+    
     collectionView.isPagingEnabled = true
     collectionView.backgroundColor = .white
     collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -33,8 +41,6 @@ class ContentView: UIView {
     addSubview(collectionView)
     addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":collectionView]))
     addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":collectionView]))
-    
-    
   }
   
   required init?(coder aDecoder: NSCoder) {
